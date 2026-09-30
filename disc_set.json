@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Tenchu 2 - Birth of the Stealth Assassins (USA).cue",
+      "cue_path": "disc/Tenchu 2 - Birth of the Stealth Assassins (USA).cue",
+      "serial": "SLUS-00939",
+      "boot_exe": "SLUS_009.39",
+      "entry_pc": "0x8002E4BC",
+      "track_count": 1,
+      "required_disc_fp": "eec448ad4c296bc88cd931975d146012275da170414a1f6b94ce191766f1ea9c"
+    }
+  ]
+}

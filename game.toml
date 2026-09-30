@@ -1,0 +1,55 @@
+
+[game]
+name = "Tenchu 2: Birth of the Stealth Assassins"
+id = "SLUS-00939"
+players = 1
+exe = "disc/SLUS_009.39"
+disc = "disc/Tenchu 2 - Birth of the Stealth Assassins (USA).cue"
+load_address = "0x80012000"
+entry_pc = "0x8002E4BC"
+text_size = "0x00024800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Tenchu 2 - Birth of the Stealth Assassins (USA).bin"
+cue_name = "Tenchu 2 - Birth of the Stealth Assassins (USA).cue"
+boot_exe = "SLUS_009.39"
+known_sizes = [744034032]
+known_md5 = [
+  "327420ecbe9945bc334cfea8f6938ab4",
+]
+known_sha1 = [
+  "0caa6a59a1d7bf16ff01acc471134f400c2df303",
+]
+known_crc32 = [
+  "297ea5c3",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Tenchu 2: Birth of the Stealth Assassins Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "analog"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "eec448ad4c296bc88cd931975d146012275da170414a1f6b94ce191766f1ea9c"
+
+[pgo]
+enabled = false
