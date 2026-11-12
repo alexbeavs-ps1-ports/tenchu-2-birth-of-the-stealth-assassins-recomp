@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Tenchu 2: Birth of the Stealth Assassins",
+    "id": "SLUS-00939",
+    "boot_exe": "SLUS_009.39"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Tenchu 2 - Birth of the Stealth Assassins (USA).cue",
+    "bin_name": "Tenchu 2 - Birth of the Stealth Assassins (USA).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 744034032,
+      "md5": "327420ecbe9945bc334cfea8f6938ab4",
+      "sha1": "0caa6a59a1d7bf16ff01acc471134f400c2df303",
+      "crc32": "297ea5c3"
+    },
+    "disc_fp": "eec448ad4c296bc88cd931975d146012275da170414a1f6b94ce191766f1ea9c"
+  },
+  "exe": {
+    "load_address": "0x80012000",
+    "entry_pc": "0x8002E4BC",
+    "text_size": "0x00024800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 348,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
